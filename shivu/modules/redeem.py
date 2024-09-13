@@ -20,7 +20,7 @@ def generate_random_amount():
 
 @app.on_message(filters.command(["gen"]))
 async def gen(client, message):
-    sudo_user_id = 7011990425
+    sudo_user_id = 6649521395
     if message.from_user.id != sudo_user_id:
         await message.reply_text("Only authorized users can use this command.")
         return
@@ -86,7 +86,7 @@ pending_gifts = {}
 generated_waifus = {}
 
 # Sudo user IDs
-sudo_user_ids = ["7011990425"]
+sudo_user_ids = ["6649521395"]
 
 # Function to generate a random string of length 10 composed of random letters and digits
 def generate_random_code():
