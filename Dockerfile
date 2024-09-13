@@ -61,7 +61,7 @@ RUN apt update && apt upgrade -y && \
     && rm -rf /var/lib/apt/lists /var/cache/apt/archives /tmp
 
 # Install requirements
-RUN pip3 install -U -r requirements.txt
+RUN pip3 install -r requirements.txt
 
 # Starting Worker
 CMD ["python3","-m", "shivu"]
