@@ -94,8 +94,8 @@ async def inlinequery(update: Update, context: CallbackContext) -> None:
                 caption += "\n\n☃️𝑾𝒊𝒏𝒕𝒆𝒓☃️"
             elif '🐰' in character['name']:
                 caption += "\n\n🐰𝑩𝒖𝒏𝒏𝒚🐰"
-            elif '🎮' in character['name']:
-                caption += "\n\n 🎮𝑮𝒂𝒎𝒆🎮"
+            elif '✅' in character['name']:
+                caption += "\n\n ✅𝑮𝒂𝒎𝒆✅"
             elif '🎄' in character['name']:
                 caption += "\n\n🎄𝑪𝒓𝒊𝒔𝒕𝒎𝒂𝒔🎄"
             elif '🎃' in character['name']:
