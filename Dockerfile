@@ -60,16 +60,6 @@ RUN apt update && apt upgrade -y && \
     libopus-dev \
     && rm -rf /var/lib/apt/lists /var/cache/apt/archives /tmp
 
-# Pypi package Repo upgrade
-RUN pip3 install --upgrade pip setuptools
-
-# Copy Python Requirements to /root/FallenRobot
-RUN git clone https://github.com/Mynameishekhar/ptb /root/ptb
-WORKDIR /root/ptb
-
-
-ENV PATH="/home/bot/bin:$PATH"
-
 # Install requirements
 RUN pip3 install -U -r requirements.txt
 
